@@ -2,9 +2,21 @@
     height: 100vh
     display: flex
     position: relative
+    &-info
+        position: absolute
+        right: 51px
+        top: 45px
+        color: white
+    .container
+        height: 100%
+        max-width: 1140px
+        position: relative
+        margin: 0 auto
     &-main
         background: url("../img/header/bg.png") center center/cover no-repeat
         height: 100vh
+        position: relative
+        width: 100%
     &-link
         font-size: 0.6rem
         font-stretch: normal
@@ -14,7 +26,7 @@
         bottom: 29px
         right: 37px
     &-title
-        font-size: 8.25rem
+        font-size: 6.25rem
         font-weight: bold
         line-height: 0.77
         letter-spacing: -6.6px
@@ -26,8 +38,53 @@
         transform: translate(-50%, -50%)
     &-subt
         font-family: "MeatBuckets"
+        width: 120px
+        height: 120px
+        border-radius: 100%
+        border: 5px solid white
+        font-size: 5.2rem
+        display: flex
+        justify-content: center
+        align-items: center
+        &__wrapper
+            height: 135px
+            width: 135px
+            background: url("../img/header/bg.png") center center/95vw 100vh no-repeat
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            border-radius: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+    &-сollection
         position: absolute
-        top: 50%
-        left: 50%
-        transform: translate(-50%, -50%)
-        
+        bottom: 30px
+        left: 0
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+        &__info
+            width: 45%
+        &__link
+            font-size: 1.5rem
+            font-weight: bold
+            line-height: 1.04
+            margin-bottom: 23px
+            a
+                color: #ffffff
+                text-decoration: none
+        &__descr
+            font-size: 0.8rem
+            font-weight: normal;
+            line-height: 1.92;
+            color: #ffffff;
+    &-logo
+        width: 25%
+        img
+            width: 198px
+            height: 60px
+
+ 
