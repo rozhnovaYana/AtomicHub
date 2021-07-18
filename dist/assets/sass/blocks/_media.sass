@@ -1,0 +1,95 @@
+@media screen and ( max-width: 1200px )
+    .container
+        max-width: 960px
+    html
+        font-size: 14px
+@media screen and ( max-width: 992px )
+    .container
+        max-width: 720px
+    html
+        font-size: 13px
+    .header
+        &-title
+            h1
+                font-size: 6.5rem
+        &-subt
+            font-size: 4.5rem
+            width: 90px
+            height: 90px
+            &__wrapper
+                width: 100px
+                height: 100px
+@media screen and ( max-width: 768px )
+    .container
+        max-width: 540px
+    html
+        font-size: 16px
+    #humburger
+        width: 90px
+        height: 90px
+        background-color: #140327
+        top: 0
+        left: 0
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        span
+            width: 25%
+    .header
+        min-height: 100vh
+        height: auto
+        &-info
+            display: none
+        &-main
+            padding: 100px 44px 
+        &-subt
+            &__wrapper
+                display: none
+        &-title
+            font-size: 8.5rem
+            text-align: left
+            position: relative
+            top: inherit
+            left: inherit
+            transform: inherit
+            margin-bottom: 57px
+        &-сollection
+            position: relative
+            left: inherit
+            bottom: inherit
+            transform: inherit
+            flex-direction: column
+            &__info
+                width: 100%
+        &-logo
+            width: 100%
+            margin-top: 34px
+        &-link
+            display: none
+    .section
+        &-sidebar
+            &__content
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%) rotate(-90deg)
+            &__arrow
+                margin-right: 80px
+@media screen and ( max-width: 576px )
+    .container
+        max-width: 85%
+    #humburger
+        width: 50px
+        height: 50px
+    .header
+        &-title
+            h1
+                font-size: 4.5rem
+        &-main
+            padding: 100px 10px
+    .section
+        &-sidebar
+            display: none
+
+    
+    
