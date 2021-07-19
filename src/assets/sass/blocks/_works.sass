@@ -1,0 +1,115 @@
+.works
+    padding: 40px 0 21px
+    position: relative
+    overflow-x: hidden
+   
+    &-title
+        font-size: 1.2rem
+        font-weight: bold
+        line-height: 2em
+        text-transform: uppercase
+        color: white
+        max-width: 1060px
+        position: relative
+        margin: 0 auto 40px
+    &-cards
+        display: grid
+        grid-template-rows: 1fr
+        grid-template-columns: repeat(4, 1fr)
+        transform: translateX(-190px)
+    &-card
+        width: 331px
+        margin: 0 10px
+        position: relative
+        height: 100%
+        display: flex
+        flex-direction: column
+        &:nth-child(2)
+            .works-card__img
+                img
+                    filter: opacity(45%)
+        &__img
+            clip-path: polygon(0 0%, 100% 0%, 100% 100%, 10% 100%, 0% 90%)
+            flex: 1
+            img
+                width: 100%
+        &__descr
+            clip-path: polygon(0 0%, 100% 0%, 100% 100%, 10% 100%, 0% 90%)
+            background: white
+            padding: 43px 40px 64px
+            position: relative
+            flex: 5
+        &__title
+            font-size: 1.55rem
+            font-weight: 400
+            line-height: 1.5em
+            text-transform: uppercase
+            margin-bottom: 12px
+        &__subt
+            font-size: 0.8rem
+            font-weight: 300
+            line-height: 1.5em
+        &__footer
+            display: flex
+            justify-content: space-between
+            align-items: center
+            color: black
+            position: absolute
+            bottom: 0px
+            left: 0px
+            width: 100%
+            padding: 0 0 0 40px 
+        &__read
+            font-size: 0.8rem
+            font-weight: 400
+            line-height: 1.5em
+            text-transform: uppercase
+            display: flex
+            cursor: pointer
+            white-space: nowrap
+            img
+                margin-right: 11px
+                width: 20px
+                height: 20px
+        &__dots
+            width: 70px
+            height: 63px
+            background-color: #f5f5f5
+            display: flex
+            justify-content: center
+            align-items: center
+            cursor: pointer
+    &-read
+        position: absolute
+        top: 50%
+        right: 20px
+        transform: translateY(-50%) rotate(180deg)
+        height: 100%
+        color: white 
+        white-space: nowrap
+        display: flex
+        align-items: center
+        font-size: 1.2rem
+        font-weight: 700
+        line-height: 1.5em
+        text-transform: uppercase
+        cursor: pointer
+        &__text
+            writing-mode: vertical-rl
+
+        i
+            font-size: 35px
+            margin-bottom: 30px
+            writing-mode: vertical-rl
+
+            
+
+
+
+
+
+
+
+            
+                
+            
