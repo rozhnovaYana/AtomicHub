@@ -17,6 +17,11 @@
     .works
         &-card
             width: 400px
+    .create
+        &-cards
+            grid-template-columns: repeat(3, 500px)
+        &-card
+            grid-template-rows: 270px auto
     
 @media screen and ( max-width: 1200px )
     .container
@@ -34,6 +39,14 @@
         &-wrapper
             width: 95%
             margin: 0 auto
+    .create
+        &-cards
+            grid-template-columns: repeat(3, 1fr)
+            grid-column-gap: 5px
+        &-card
+            grid-template-rows: 150px auto
+
+
                 
 @media screen and ( max-width: 992px )
     .container
@@ -48,7 +61,7 @@
             h1
                 font-size: 6.5rem
         &-subt
-            font-size: 4.5rem
+            font-size: 85px
             width: 90px
             height: 90px
             &__wrapper
@@ -62,6 +75,9 @@
         &-wrapper
             width: 90%
             margin: 0 auto
+    .create
+        display: none
+            
 
 @media screen and ( max-width: 768px )
     .container
@@ -191,6 +207,7 @@
             &-subt
                 width: 70px
                 height: 70px
+                font-size: 65px
                 &__wrapper
                     width: 80px
                     height: 80px
@@ -208,13 +225,7 @@
             margin: 0 auto
             i
                 display: none
-                
-
-
-    
-     
-                
-                
+              
 @media screen and ( max-width: 576px )
     .container
         max-width: auto
@@ -257,7 +268,7 @@
             &-subt
                 width: 60px
                 height: 60px
-                font-size: 3.5rem
+                font-size: 50px
                 &__wrapper
                     width: 70px
                     height: 70px
