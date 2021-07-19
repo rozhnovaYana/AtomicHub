@@ -10,28 +10,39 @@
     .container
         max-width: 85%
     html
-        font-size: 25px
+        font-size: 20px
+    .section-withSidebar
+        .container
+            max-width: 92%
     .works
         &-card
             width: 400px
     
 @media screen and ( max-width: 1200px )
     .container
-        max-width: 960px
+        max-width: calc(960px - 76px)
+    .section-withSidebar
+        .container
+            max-width: 960px
     html
         font-size: 14px
     .works
-        &-title
-            max-width: 860px
         &-card
             &:nth-child(3)
                 display: none
+    .about
+        &-wrapper
+            width: 95%
+            margin: 0 auto
                 
 @media screen and ( max-width: 992px )
     .container
         max-width: 720px
     html
         font-size: 13px
+    .section-withSidebar
+        .container
+            max-width: calc(720px + 76px)
     .header
         &-title
             h1
@@ -44,17 +55,24 @@
                 width: 100px
                 height: 100px
     .works
-        &-title
-            max-width: 640px
         &-card
             &:nth-child(4)
                 display: none
+    .about
+        &-wrapper
+            width: 90%
+            margin: 0 auto
 
 @media screen and ( max-width: 768px )
     .container
         max-width: 540px
+    .section-withSidebar
+        .container
+            max-width: calc(540px + 76px)
     html
         font-size: 16px
+    body
+        background: url("../img/body/mobile.webp") top center/cover no-repeat
     #humburger
         width: 90px
         height: 90px
@@ -68,7 +86,7 @@
         padding: 30px
         span
             margin: 2px
-    .header
+    .header .header
         min-height: 100vh
         height: auto
         &-main
@@ -150,6 +168,49 @@
             &:nth-child(2)
                 img
                     filter: opacity(100%)
+    .information
+        max-height: 660px
+        height: 660px
+        &-main
+            height: 100%
+        .header
+            &-title
+                h1
+                    font-size: 3.5rem
+            &-сollection
+                &__info 
+                    width: 85%;
+                    margin: 0 auto;
+                    text-align: center;
+                &__link
+                    i
+                        display: none
+                    a
+                        text-align: center
+                        width: 100%
+            &-subt
+                width: 70px
+                height: 70px
+                &__wrapper
+                    width: 80px
+                    height: 80px
+    .about
+        &-wrapper
+            flex-direction: column
+            width: 85%
+            text-align: justify
+        &-col
+            margin: 10px 0
+        &-more
+            transform: none
+            position: relative
+            right: 0
+            margin: 0 auto
+            i
+                display: none
+                
+
+
     
      
                 
@@ -157,6 +218,9 @@
 @media screen and ( max-width: 576px )
     .container
         max-width: auto
+    .section-withSidebar
+        .container
+            max-width: auto
     #humburger
         width: 70px
         height: 70px
@@ -175,6 +239,29 @@
     .works
         &-card
             width: 95%
+    .about
+        &-sidebar
+            display: none
+        &-more
+            a
+                button
+                    width: 85%
+    .information
+        height: 450px
+        .header
+            &-title
+                top: 20%
+                transform: translateX(-50%)
+                h1
+                    font-size: 2.5rem
+            &-subt
+                width: 60px
+                height: 60px
+                font-size: 3.5rem
+                &__wrapper
+                    width: 70px
+                    height: 70px
+
             
 
     
