@@ -45,6 +45,21 @@
             grid-column-gap: 5px
         &-card
             grid-template-rows: 150px auto
+    .stages
+        &-sidebar
+            display: none
+    .creator
+            background: url("../img/creator/bg_mobile.webp") center center/cover no-repeat
+            &-title
+                font-size: 4.5rem
+                margin: 25px 0 15px
+                &_mini
+                    font-size: 1.5rem
+                &__descr
+                    font-size: 1.5rem
+            &-wrapper
+                left: 118px
+
 
 
                 
@@ -77,6 +92,22 @@
             margin: 0 auto
     .create
         display: none
+    .stages
+        &-cards
+            grid-template-columns: repeat(2, auto)
+            grid-column-gap: 30px
+            grid-row-gap: 100px
+            justify-content: initial
+    .footer
+        &-cols
+            grid-column-gap: 75px
+            grid-template-columns: 220px 220px
+        &-col
+            &__descr
+                a
+                    margin-top: 10px
+                    display: block
+            
             
 
 @media screen and ( max-width: 768px )
@@ -225,6 +256,11 @@
             margin: 0 auto
             i
                 display: none
+    .creator
+        &-wrapper
+            left: 50px
+        &-title
+            margin: 15px 0
               
 @media screen and ( max-width: 576px )
     .container
@@ -272,6 +308,33 @@
                 &__wrapper
                     width: 70px
                     height: 70px
+    .stages
+        padding: 0px 15px
+        &-cards
+            grid-template-columns: repeat(1, auto)
+            grid-column-gap: 0
+            grid-row-gap: 50px
+            justify-content: initial
+        &-card
+            &__title
+                margin-bottom: 33px
+    .creator
+        min-height: 550px
+        &-wrapper
+            left: 10px
+        &-title
+            margin: 15px 0
+            font-size: 3.5rem
+            &_mini
+                font-size: 1.1rem
+            &__descr
+                font-size: 1.1rem
+    .footer
+        padding: 50px 15px 40px
+        &-cols
+            grid-template-columns: 1fr
+        
+
 
             
 
