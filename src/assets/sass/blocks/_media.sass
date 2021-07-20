@@ -19,9 +19,7 @@
             width: 400px
     .create
         &-cards
-            grid-template-columns: repeat(3, 500px)
-        &-card
-            grid-template-rows: 270px auto
+            justify-content: space-around
     
 @media screen and ( max-width: 1200px )
     .container
@@ -59,6 +57,12 @@
                     font-size: 1.5rem
             &-wrapper
                 left: 118px
+    .menu
+        &-wrapper
+            width: 300px
+        &-item
+            a
+                padding: 0 20px
 
 
 
@@ -179,6 +183,8 @@
             &__arrow
                 margin-right: 80px
     .works
+        padding: 0
+        margin: 40px 0 50px
         &-read
             display: none
         &-title
@@ -188,26 +194,43 @@
             grid-template-columns: 1fr
             margin-left: 40px
             position: relative
+        &-more
+            display: block
+            height: 100%
+            width: 30px
+            position: absolute
+            top: 0
+            left: 10px
+            background: #f44d69
+            background: rgba(0, 255, 90, 0.8)
+            transform: rotate(180deg)
+            z-index: 1
             &::before
-                content: "MORE WORKS CAN BE SEEN ON atomichub"
-                background-color: #f44d69
+                content: ""
                 display: block
-                writing-mode: vertical-rl
-                transform: translateY(-50%) rotate(180deg)
-                border: 4px solid rgba(0, 255, 90, 0.8)
-                border-left: none
-                position: absolute
-                text-align: center
-                left: -30px
-                top: 50%
+                width: 100%
                 height: 100%
-                width: 25px
-                color: #f5f5f5
-                font-weight: 400
-                text-transform: uppercase
+                position: absolute
+                z-index: -1
+                top: -3px
+                left: -3px
+                background: #f44d69
+            a
+              color: white 
+              writing-mode: vertical-rl 
+              font-weight: 400
+              text-align: left
+              font-size: 1.2rem
+              text-transform: uppercase
+              display: flex
+              justify-content: center
+              align-items: center
+              text-align: center
+              width: 100%
+              height: 100%
         &-card
             position: relative
-            width: 90%
+            width: 95%
             img
                 width: 100%
             &:nth-child(1)
@@ -249,13 +272,14 @@
             text-align: justify
         &-col
             margin: 10px 0
-        &-more
-            transform: none
-            position: relative
-            right: 0
-            margin: 0 auto
-            i
-                display: none
+        .about
+            &-more
+                transform: none
+                position: relative
+                right: 0
+                margin: 0 auto
+                i
+                    display: none
     .creator
         &-wrapper
             left: 50px
@@ -310,14 +334,6 @@
                     height: 70px
     .stages
         padding: 0px 15px
-        &-cards
-            grid-template-columns: repeat(1, auto)
-            grid-column-gap: 0
-            grid-row-gap: 50px
-            justify-content: initial
-        &-card
-            &__title
-                margin-bottom: 33px
     .creator
         min-height: 550px
         &-wrapper
@@ -333,6 +349,12 @@
         padding: 50px 15px 40px
         &-cols
             grid-template-columns: 1fr
+    .menu
+        &-wrapper
+            width: 200px
+        &-item
+            a
+                padding: 0 20px
         
 
 

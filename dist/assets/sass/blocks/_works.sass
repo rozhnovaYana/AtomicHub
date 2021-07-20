@@ -2,6 +2,8 @@
     padding: 40px 0 21px
     position: relative
     overflow-x: hidden
+    &-more
+        display: none
    
     &-title
         font-size: 1.2rem
@@ -59,13 +61,16 @@
             width: 100%
             padding: 0 0 0 40px 
         &__read
-            font-size: 0.8rem
-            font-weight: 400
-            line-height: 1.5em
-            text-transform: uppercase
             display: flex
-            cursor: pointer
-            white-space: nowrap
+            a
+                font-size: 0.8rem
+                font-weight: 400
+                line-height: 1.5em
+                text-transform: uppercase
+                display: flex
+                cursor: pointer
+                white-space: nowrap
+                color: black
             img
                 margin-right: 11px
                 width: 20px
